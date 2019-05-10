@@ -1,0 +1,93 @@
+//请关闭自动换行
+//=============================================
+引脚使用：(带*为可变)
+
+PA0:				PE0:
+PA1:				PE1:
+PA2:				PE2:
+PA3:				PE3:
+PA4:				PE4:
+PA5:				PE5:
+PA6:				PE6:
+PA7:				PE7: LCD_D4
+PA8:				PE8: LCD_D5
+PA9:(串口尽量别占用)			PE9: LCD_D6
+PA10:(串口尽量别占用)		PE10: LCD_D7
+PA11:				PE11: LCD_D8
+PA12:				PE12: LCD_D9
+PA13: JTAG			PE13: LCD_D10
+PA14: JTAG			PE14: LCD_D11
+PA15: JTAG			PE15: LCD_D12
+
+PB0: LCD_CLK(连了没用)  LED		PF0:
+PB1: LCD_PEN(连了没用)		PF1:
+PB2: LCD_MISO(连了没用)		PF2:
+PB3: JTAG				PF3: 摇杆按键
+PB4: JTAG				PF4: 摇杆x
+PB5: *KEY				PF5: 摇杆y
+PB6: *KEY				PF6:
+PB7: *KEY				PF7:
+PB8: *KEY				PF8:
+PB9: *KEY				PF9:
+PB10:				PF10:
+PB11:				PF11: LCD_MOSI(连了没用)
+PB12:				PF12: LCD_RS
+PB13:				PF13:
+PB14:				PF14:
+PB15: LCD_BL			PF16:
+
+PC0:				PG0:
+PC1:				PG1:
+PC2:				PG2:
+PC3:				PG3:
+PC4:				PG4:
+PC5:				PG5:
+PC6:				PG6:
+PC7:				PG7:
+PC8:				PG8:
+PC9:				PG9:
+PC10:				PG10:
+PC11:				PG11:
+PC12:				PG12: LCD_CS
+PC13: LCD_TCS(连了没用)		PG13:
+PC14:				PG14:
+PC15:				PG15: 蜂鸣器
+
+PD0: LCD_D2
+PD1: LCD_D3
+PD2:
+PD3:
+PD4: LCD_RD
+PD5: LCD_WR
+PD6:
+PD7:
+PD8: LCD_D13
+PD9: LCD_D14
+PD10: LCD_D15
+PD11:
+PD12:
+PD13:
+PD14: LCD_D0
+PD15: LCD_D1
+//==================================
+更新说明：
+
+V1.0：2019年3月28日
+	-demo工程，只有LCD显示功能。
+	-read me添加引脚使用说明。
+
+V1.01：2019年3月28日
+	-添加5个按键（凑活着用吧）
+
+V1.02：2019年3月29日
+	-添加蜂鸣器
+	-LCD添加分页功能
+	-添加摇杆功能
+
+V1.03：2019年3月30日
+	-LCD屏幕添加指针图标，及参数列表(试行)
+	-按键添加参数调整功能
+	-优化LCD屏显示方式提高主程序运行效率
+
+V1.04：2019年3月30日
+	-添加Flash模拟EEPROM功能用来存储参数(扇区7 128K 这辈子用不完吧)
